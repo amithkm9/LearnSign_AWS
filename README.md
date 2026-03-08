@@ -227,17 +227,6 @@ Your personal AI-powered sign language tutor:
   <p><i>Inspiring stories from successful deaf individuals</i></p>
 </div>
 
-### AI Tutor – SignMentor
-<div align="center">
-  <img src="docs/screenshots/tutor.png" alt="AI Tutor" width="800"/>
-  <p><i>Conversational AI tutor with voice input/output and video demonstrations</i></p>
-</div>
-
-### Parent Report
-<div align="center">
-  <img src="docs/screenshots/report.png" alt="Parent Report" width="800"/>
-  <p><i>AI-generated learning reports with charts and PDF export</i></p>
-</div>
 
 ---
 
