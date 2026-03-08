@@ -2,45 +2,61 @@
 
 <div align="center">
   <img src="public/assets/imgs/image.png" alt="LearnSign Logo" width="300"/>
-  
-  **Interactive AI-Powered Sign Language Learning Platform**
-  
+
+  **"Duolingo for Sign Language" — AI-Powered Indian Sign Language Learning & Translation Platform**
+
   *Empowering children with innovative sign language education*
 
   [![GitHub](https://img.shields.io/badge/GitHub-LearnSign-blue?logo=github)](https://github.com/amithkm9/LearnSign_pro)
   [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
   [![Node.js](https://img.shields.io/badge/Node.js-18.x-brightgreen?logo=node.js)](https://nodejs.org/)
-  [![MongoDB](https://img.shields.io/badge/MongoDB-5.0-green?logo=mongodb)](https://www.mongodb.com/)
+  [![AWS](https://img.shields.io/badge/AWS-Powered-orange?logo=amazonaws)](https://aws.amazon.com/)
   [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange?logo=tensorflow)](https://www.tensorflow.org/)
+
+  ---
+
+  > 🏆 **Submitted to the AWS AI for Bharat Hackathon**
+  >
+  > **Team Name:** LearnSign &nbsp;|&nbsp; **Team Leader:** Amith K M
+  >
+  > **Problem Statement:** Build an AI-powered solution that improves access to information, resources, or opportunities for communities and public systems.
+
 </div>
 
 ---
 
 ## 📖 Table of Contents
 
-- [About](#about)
-- [Features](#features)
-- [Screenshots](#screenshots)
-- [Tech Stack](#tech-stack)
-- [Architecture](#architecture)
-- [Sign Recognition System](#sign-recognition-system)
-- [AI Tutor System](#-ai-tutor-system-signmentor)
+- [About](#-about)
+- [Why AI?](#-why-ai-is-required)
+- [Key Innovations](#-key-innovations)
+- [AI Value to Users](#-what-value-the-ai-layer-adds)
+- [Features](#-features)
+- [Screenshots](#-screenshots)
+- [AWS Architecture](#-aws-architecture)
+- [Tech Stack](#-tech-stack)
+- [User Journey](#-user-journey--system-interaction-flow)
+- [Sign Recognition System](#-sign-recognition-system)
+- [AI Tutor – SignMentor](#-ai-tutor-system-signmentor)
 - [Parent Report System](#-parent-report-system)
-- [Getting Started](#getting-started)
+- [Getting Started](#-getting-started)
 - [Installation](#installation)
 - [Configuration](#configuration)
 - [Usage](#usage)
-- [API Documentation](#api-documentation)
-- [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+- [API Documentation](#-api-documentation)
+- [Project Structure](#-project-structure)
+- [Roadmap](#-roadmap)
+- [Contributing](#-contributing)
+- [Team](#-team)
+- [License](#-license)
+- [Contact](#-contact)
+- [Acknowledgments](#-acknowledgments)
 
 ---
 
 ## 🎯 About
 
-**LearnSign** is a comprehensive, AI-powered platform designed to teach sign language to children ages 1-15+. The platform combines interactive video lessons, gamified learning experiences, real-time sign language recognition, and detailed progress tracking to make learning sign language engaging, effective, and accessible.
+**LearnSign** is the **"Duolingo for Sign Language"** — a comprehensive, AI-powered Indian Sign Language (ISL) learning and translation platform designed for children ages 1–15+. The platform uses a **webcam + computer vision** to detect signs in real time and deliver instant AI feedback, making sign language education interactive, personalized, and accessible to all.
 
 ### Mission
 
@@ -48,18 +64,51 @@ To bridge communication gaps and empower deaf and hard-of-hearing children throu
 
 ### Vision
 
-Create an inclusive world where every child can communicate effectively through sign language, breaking down barriers and fostering understanding.
+Create an inclusive world where every child can communicate effectively through sign language, breaking down barriers and fostering understanding across communities.
+
+---
+
+## 🤖 Why AI Is Required
+
+LearnSign's core experience is only possible because of AI:
+
+- **Real-time sign language recognition** using computer vision directly from webcam input.
+- **Detects hand gestures and facial cues** to understand Indian Sign Language accurately.
+- **Instant feedback system** tells users whether a sign is correct or incorrect.
+- **Personalized learning** by analyzing mistakes and adapting difficulty levels.
+- **Automates evaluation and progress tracking**, which is impossible with traditional video-based learning.
+
+---
+
+## 💡 Key Innovations
+
+1. **Webcam-Based Quizzes** — Interactive assessments where learners perform signs live in front of their camera.
+2. **Understands Signs in Real-Time** — AI-powered computer vision detects hand gestures (and facial cues) instantly.
+3. **Provides Instant AI Feedback** — Immediate results: Correct / Incorrect + actionable improvement tips + score.
+4. **Age-Tailored Courses** — Structured content designed for: 1–5 years, 6–10 years, and 10–15 years.
+5. **Video Lessons** — Expert-led sign demonstrations for step-by-step learning.
+6. **Progress Tracking** — Tracks learning milestones, quiz performance, and skill growth over time.
+
+---
+
+## 🌟 What Value the AI Layer Adds
+
+1. **Interactive learning** with real-time sign detection through webcam.
+2. **Instant AI feedback** improves accuracy and learning speed.
+3. **Personalized recommendations** based on user performance.
+4. **AI-powered dashboard & report generation** showing progress and analytics.
+5. **Accessible communication** by converting sign language into text for real-world use.
 
 ---
 
 ## ✨ Features
 
-### 🎓 **Comprehensive Course Catalog**
+### 🎓 Comprehensive Course Catalog
 
 - **Age-Appropriate Learning Paths**
-  - Early Learners (Ages 1-4): Foundational signs through play
-  - Young Explorers (Ages 5-10): Vocabulary building and conversations
-  - Advanced Learners (Ages 15+): Complex communication and cultural context
+  - Early Learners (Ages 1–4): Foundational signs through play
+  - Young Explorers (Ages 5–10): Vocabulary building and conversations
+  - Advanced Learners (Ages 10–15+): Complex communication and cultural context
 
 - **Structured Curriculum**
   - 50+ interactive lessons
@@ -67,29 +116,25 @@ Create an inclusive world where every child can communicate effectively through 
   - Quizzes and assessments
   - Progress tracking per course
 
-### 🤖 **AI-Powered Sign Recognition**
+### 🤖 AI-Powered Real-Time Sign Recognition
 
-Our cutting-edge machine learning system provides:
-
-- **Real-Time Recognition**
-  - Live webcam-based sign detection
-  - Instant feedback on sign accuracy
-  - Support for 350+ common signs
+- **Live webcam-based sign detection** with instant accuracy feedback
+- **Support for 350+ common ISL signs**
 
 - **Three Recognition Modes**
-  1. **Alphabet Recognition**: Learn A-Z fingerspelling
-  2. **Number Recognition**: Master numbers 0-9
-  3. **Word Recognition**: Common words and phrases
+  1. **Alphabet Recognition** — Learn A–Z fingerspelling
+  2. **Number Recognition** — Master numbers 0–9
+  3. **Word Recognition** — Common words and phrases
 
-- **Advanced ML Features**
+- **Advanced ML Pipeline**
   - MediaPipe hand landmark detection
   - LSTM neural network for sequence recognition
   - 95%+ accuracy on trained signs
   - Real-time pose estimation
 
-### 📊 **Progress Tracking & Analytics**
+### 📊 Analytics & Progress Tracking (Gamified Dashboard)
 
-- **Personalized Dashboard**
+- **Gamified Dashboard**
   - Overall learning progress percentage
   - Lessons completed counter
   - Total time spent learning
@@ -98,10 +143,17 @@ Our cutting-edge machine learning system provides:
 - **Visual Analytics**
   - Weekly activity charts
   - Progress by category (pie charts)
-  - Achievement metrics
-  - Performance trends
+  - Achievement metrics and badges
+  - Performance trends over time
 
-### 🤖 **AI Tutor (SignMentor)** *(NEW)*
+- **AI-Generated Reports (Parent Reporting)**
+  - AI-powered personalized learning summary
+  - Strengths and growth areas analysis
+  - Weekly goals and recommendations
+  - Actionable tips for parents
+  - Download as PDF / Print-friendly format
+
+### 🤖 AI Tutor – SignMentor
 
 Your personal AI-powered sign language tutor:
 
@@ -111,9 +163,9 @@ Your personal AI-powered sign language tutor:
   - Step-by-step learning guides with practice exercises
   - Related signs and vocabulary suggestions
 
-- **Voice Interaction** (OpenAI Whisper + TTS)
-  - 🎤 Voice input - speak naturally in your language
-  - 🔊 Voice responses - hear pronunciations and instructions
+- **Voice Interaction** (Amazon Transcribe + Amazon Polly)
+  - 🎤 Voice input — speak naturally in your language
+  - 🔊 Voice responses — hear pronunciations and instructions
   - Multi-language support: English, Hindi (हिंदी), Kannada (ಕನ್ನಡ), Telugu (తెలుగు)
 
 - **Intelligent Video Sequences**
@@ -122,52 +174,19 @@ Your personal AI-powered sign language tutor:
   - Pause, replay, and slow-motion controls
   - Click any word to jump to its sign
 
-### 📄 **Parent Report Dashboard** *(NEW)*
+### 🔤 Sign Language Translator
 
-Comprehensive AI-generated learning reports for parents:
+- Type any word or sentence to see its ISL sign
+- Video demonstrations with loop functionality
+- Quick example phrases
+- Search through 350+ sign database
+- Real-world text ↔ sign language conversion
 
-- **AI-Powered Insights**
-  - Personalized learning summary
-  - Strengths and growth areas analysis
-  - Weekly goals and recommendations
-  - Actionable tips for parents
+### 👨‍👩‍👧‍👦 Community & Inspiring Journeys
 
-- **Visual Analytics**
-  - Weekly activity charts
-  - Quiz performance trends
-  - Course progress visualization
-  - Achievement showcase
-
-- **Export Options**
-  - 📥 Download as PDF
-  - 🖨️ Print-friendly format
-  - Beautiful, shareable reports
-
-### 🎮 **Interactive Learning Experience**
-
-- **Translator Tool**
-  - Type any word to see its sign
-  - Video demonstrations with loop functionality
-  - Quick example phrases
-  - Search through 350+ sign database
-
-- **Gamification Elements**
-  - Achievement badges
-  - Streak tracking
-  - Quiz challenges
-  - Progress milestones
-
-### 👨‍👩‍👧‍👦 **Community Features**
-
-- **Inspiring Journeys**
-  - Success stories from deaf achievers
-  - Role models and inspiration
-  - Real-world impact stories
-
-- **User Testimonials**
-  - Parent feedback
-  - Teacher reviews
-  - Student experiences
+- Success stories from deaf achievers
+- Role models and inspirational figures
+- Real-world impact stories
 
 ---
 
@@ -179,10 +198,10 @@ Comprehensive AI-generated learning reports for parents:
   <p><i>Beautiful landing page with mission statement and call-to-action</i></p>
 </div>
 
-### Dashboard & Progress Tracking
+### Course Catalog
 <div align="center">
-  <img src="docs/screenshots/dashboard.png" alt="Dashboard" width="800"/>
-  <p><i>Comprehensive learning analytics and progress visualization</i></p>
+  <img src="docs/screenshots/courses.png" alt="Courses" width="800"/>
+  <p><i>Age-appropriate learning paths with progress indicators</i></p>
 </div>
 
 ### Sign Language Translator
@@ -191,10 +210,10 @@ Comprehensive AI-generated learning reports for parents:
   <p><i>Real-time sign language recognition and demonstration</i></p>
 </div>
 
-### Course Catalog
+### Dashboard & Progress Tracking
 <div align="center">
-  <img src="docs/screenshots/courses.png" alt="Courses" width="800"/>
-  <p><i>Age-appropriate learning paths with progress indicators</i></p>
+  <img src="docs/screenshots/dashboard.png" alt="Dashboard" width="800"/>
+  <p><i>Gamified analytics and progress visualization</i></p>
 </div>
 
 ### Community Section
@@ -203,13 +222,13 @@ Comprehensive AI-generated learning reports for parents:
   <p><i>Inspiring stories from successful deaf individuals</i></p>
 </div>
 
-### AI Tutor (SignMentor) *(NEW)*
+### AI Tutor – SignMentor
 <div align="center">
   <img src="docs/screenshots/tutor.png" alt="AI Tutor" width="800"/>
   <p><i>Conversational AI tutor with voice input/output and video demonstrations</i></p>
 </div>
 
-### Parent Report *(NEW)*
+### Parent Report
 <div align="center">
   <img src="docs/screenshots/report.png" alt="Parent Report" width="800"/>
   <p><i>AI-generated learning reports with charts and PDF export</i></p>
@@ -217,535 +236,163 @@ Comprehensive AI-generated learning reports for parents:
 
 ---
 
+## ☁️ AWS Architecture
+
+LearnSign is built on a fully **serverless AWS architecture** designed for real-time tracking, scalability, and reliability.
+
+### AWS Services Used
+
+| AWS Service | Role in LearnSign |
+|---|---|
+| **Amazon API Gateway** | Handles all backend REST APIs via serverless architecture |
+| **AWS Lambda** | Serverless orchestration layer — processes requests, coordinates services |
+| **Amazon Cognito** | Manages secure user authentication and login |
+| **Amazon SageMaker** | Hosts the AI/ML model for real-time ISL sign recognition inference |
+| **Amazon DynamoDB** | Stores user progress data, quiz results, and app state |
+| **Amazon S3** | Stores datasets, sign videos, and media files |
+| **Amazon Bedrock** | Powers the AI Tutor (SignMentor) — GenAI conversations and recommendations |
+| **Amazon Transcribe** | Speech-to-text for voice input in the AI Tutor |
+| **Amazon Polly** | Text-to-speech for voice responses from the AI Tutor |
+| **Amazon CloudWatch** | System monitoring, logging, and model latency tracking |
+
+### Architecture Diagram
+
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                         LearnSign: AWS Serverless Architecture               │
+├────────────────┬────────────────────────────┬───────────────────────────────┤
+│  Client Layer  │   API & Auth Layer          │   AI, ML & Data Layer         │
+│  (Frontend)    │                             │                               │
+│                │  ┌──────────────────────┐   │  ┌─────────────────────────┐ │
+│  User          │  │  Amazon API Gateway  │   │  │  Serverless Storage     │ │
+│  (Student /    │──►  + Amazon Cognito    │   │  │  Amazon DynamoDB        │ │
+│   Parent)      │  └──────────┬───────────┘   │  │  Amazon S3 Bucket       │ │
+│                │             │               │  └─────────────────────────┘ │
+│  Web App       │             ▼               │                               │
+│  (React/EJS)   │  ┌──────────────────────┐   │  ┌─────────────────────────┐ │
+│                │  │  Serverless          │───►  │  Core AI (Sign Det.)    │ │
+│  Webcam Input  │  │  Orchestration       │   │  │  Amazon SageMaker       │ │
+│                │  │  AWS Lambda          │◄──┤  │  Endpoint               │ │
+│  Microphone    │  └──────────┬───────────┘   │  └─────────────────────────┘ │
+│  Input         │             │               │                               │
+│                │             ▼               │  ┌─────────────────────────┐ │
+│                │  ┌──────────────────────┐   │  │  AI Tutor (SignMentor)  │ │
+│                │  │  Monitoring &        │   │  │  Amazon Bedrock         │ │
+│                │  │  Logging             │   │  └─────────────────────────┘ │
+│                │  │  Amazon CloudWatch   │   │                               │
+│                │  └──────────────────────┘   │  ┌─────────────────────────┐ │
+│                │                             │  │  Voice Services         │ │
+│                │                             │  │  Amazon Transcribe      │ │
+│                │                             │  │  Amazon Polly           │ │
+│                │                             │  └─────────────────────────┘ │
+└────────────────┴────────────────────────────┴───────────────────────────────┘
+```
+
+---
+
 ## 🛠 Tech Stack
 
 ### Frontend
-- **HTML5** - Semantic markup
-- **CSS3** - Custom styling with responsive design
-- **JavaScript (ES6+)** - Interactive features
-- **EJS** - Server-side templating
+- **React.js / EJS** — UI framework and server-side templating
+- **HTML5 / CSS3 / JavaScript (ES6+)** — Semantic markup, responsive design, interactive features
 
 ### Backend
-- **Node.js** (v18+) - Runtime environment
-- **Express.js** - Web application framework
-- **MongoDB** - NoSQL database
-- **Mongoose** - ODM for MongoDB
+- **Node.js** (v18+) — Runtime environment
+- **Express.js** — Web application framework
+- **Amazon DynamoDB** — NoSQL database for user data and progress
+- **Amazon S3** — Media and dataset storage
 
-### Machine Learning & AI
-- **Python 3.12** - ML runtime
-- **TensorFlow 2.x** - Deep learning framework
-- **Keras** - Neural network API
-- **MediaPipe** - Hand tracking and pose estimation
-- **OpenCV** - Computer vision processing
-- **FastAPI** - Python API framework
+### AI / ML
+- **MediaPipe** — Hand tracking and landmark detection
+- **LSTM / Random Forest Classifier** — Sign classification model
+- **Python 3.12** — ML runtime
+- **TensorFlow 2.x / Keras** — Deep learning framework
+- **OpenCV** — Computer vision processing
 
-### AI & Voice Services
-- **OpenAI GPT-4** - AI tutor conversations and insights
-- **OpenAI Whisper** - Speech-to-text for voice input
-- **OpenAI TTS** - Text-to-speech for voice responses
-- **html2pdf.js** - PDF report generation
-
-### Authentication & Security
-- **bcryptjs** - Password hashing
-- **express-session** - Session management
-- **CORS** - Cross-origin resource sharing
+### AWS Cloud Services
+- **Amazon API Gateway** — REST API management
+- **AWS Lambda** — Serverless compute
+- **Amazon Cognito** — Authentication and user management
+- **Amazon SageMaker** — ML model hosting and inference
+- **Amazon Bedrock** — GenAI-powered AI Tutor (SignMentor)
+- **Amazon Transcribe** — Speech-to-text
+- **Amazon Polly** — Text-to-speech
+- **Amazon CloudWatch** — Monitoring and logging
 
 ### Development Tools
-- **Nodemon** - Auto-restart development server
-- **Concurrently** - Run multiple processes
-- **dotenv** - Environment variable management
+- **Nodemon** — Auto-restart development server
+- **Concurrently** — Run multiple processes
+- **dotenv** — Environment variable management
+- **html2pdf.js** — PDF report generation
 
 ---
 
-## 🏗 Architecture
+## 🗺 User Journey & System Interaction Flow
 
 ```
-┌─────────────────────────────────────────────────────────────┐
-│                     LearnSign Platform                       │
-├─────────────────────────────────────────────────────────────┤
-│                                                              │
-│  ┌──────────────┐         ┌──────────────┐                 │
-│  │   Frontend   │         │   Backend    │                 │
-│  │   (EJS)      │◄───────►│  (Express)   │                 │
-│  │              │         │              │                 │
-│  │  - Views     │         │  - REST APIs │                 │
-│  │  - CSS       │         │  - Sessions  │                 │
-│  │  - JS Client │         │  - Auth      │                 │
-│  └──────────────┘         └──────┬───────┘                 │
-│                                  │                          │
-│                                  ▼                          │
-│                          ┌──────────────┐                  │
-│                          │   MongoDB    │                  │
-│                          │              │                  │
-│                          │  - Users     │                  │
-│                          │  - Courses   │                  │
-│                          │  - Progress  │                  │
-│                          │  - Quizzes   │                  │
-│                          └──────────────┘                  │
-│                                                              │
-│  ┌─────────────────────────────────────────────────┐      │
-│  │         AI/ML Recognition Services               │      │
-│  │              (Python + FastAPI)                  │      │
-│  ├─────────────────────────────────────────────────┤      │
-│  │                                                   │      │
-│  │  ┌──────────────┐  ┌──────────────┐             │      │
-│  │  │   MediaPipe  │  │  TensorFlow  │             │      │
-│  │  │   Hand       │  │    LSTM      │             │      │
-│  │  │   Tracking   │  │    Model     │             │      │
-│  │  └──────┬───────┘  └──────┬───────┘             │      │
-│  │         │                  │                      │      │
-│  │         ▼                  ▼                      │      │
-│  │  ┌────────────────────────────────┐             │      │
-│  │  │   Sign Recognition Engine       │             │      │
-│  │  │                                 │             │      │
-│  │  │  1. Alphabet Recognition       │             │      │
-│  │  │  2. Number Recognition         │             │      │
-│  │  │  3. Word/Phrase Recognition    │             │      │
-│  │  └────────────────────────────────┘             │      │
-│  │                                                   │      │
-│  └─────────────────────────────────────────────────┘      │
-│                                                              │
-└─────────────────────────────────────────────────────────────┘
+Student Flow:
+  Login/Sign-up
+    └─► Choose Activity
+          └─► Select Lesson & Practice
+                └─► Watch Video & Use Webcam
+                      └─► Real-Time Sign Recognition (MediaPipe / LSTM)
+                            ├─► Correct  → Next Lesson & Track Progress
+                            └─► Incorrect → Retry with Feedback
+
+AI Tutor Flow:
+  Ask AI Tutor
+    └─► Voice / Text Query
+          └─► AI Processing (Transcribe, Bedrock, Video Retrieval)
+                └─► Receive Response (Voice & Video)
+
+Parent Flow:
+  Parent Login
+    └─► View Dashboard
+          └─► Receive Weekly Progress Report (AI-Generated PDF)
 ```
 
 ---
 
-## 🤖 Sign Recognition System
+## 🧠 Sign Recognition System
 
-### Overview
+### How It Works
 
-The LearnSign platform features a sophisticated, real-time sign language recognition system powered by advanced machine learning algorithms. This system is the core innovation that enables interactive learning and immediate feedback.
+1. **Webcam captures** a live video frame from the user's device.
+2. **MediaPipe** processes the frame to extract 21 hand landmarks per hand, plus facial cues.
+3. **LSTM model** classifies the gesture sequence and outputs a predicted sign.
+4. **SageMaker endpoint** handles inference at scale.
+5. **Instant feedback** is sent back to the frontend: Correct / Incorrect + improvement tips.
 
-### Technical Architecture
+### Supported Sign Categories
 
-#### 1. **Hand Tracking with MediaPipe**
-
-```python
-# Hand landmark detection
-mp_hands = mp.solutions.hands
-hands = mp_hands.Hands(
-    static_image_mode=False,
-    max_num_hands=2,
-    min_detection_confidence=0.7,
-    min_tracking_confidence=0.5
-)
-```
-
-**Features:**
-- Detects 21 hand landmarks per hand
-- Real-time tracking at 30+ FPS
-- Robust to varying lighting conditions
-- Works with single or both hands
-
-**Landmarks Tracked:**
-- Thumb (4 points)
-- Index finger (4 points)
-- Middle finger (4 points)
-- Ring finger (4 points)
-- Pinky (4 points)
-- Palm (1 point)
-
-#### 2. **Feature Extraction**
-
-The system extracts and normalizes hand coordinates:
-
-```python
-def extract_features(landmarks):
-    # Extract x, y, z coordinates
-    features = []
-    for landmark in landmarks:
-        features.extend([landmark.x, landmark.y, landmark.z])
-    
-    # Normalize coordinates
-    features = normalize(features)
-    
-    return np.array(features)
-```
-
-**Feature Vector:**
-- 63 features per hand (21 landmarks × 3 coordinates)
-- 126 features for two-hand signs
-- Normalized to [0, 1] range
-- Invariant to hand position and size
-
-#### 3. **LSTM Neural Network**
-
-```python
-model = Sequential([
-    LSTM(128, return_sequences=True, input_shape=(sequence_length, num_features)),
-    Dropout(0.3),
-    LSTM(64, return_sequences=False),
-    Dropout(0.3),
-    Dense(64, activation='relu'),
-    Dense(num_classes, activation='softmax')
-])
-```
-
-**Model Architecture:**
-- **Input Layer**: Sequence of hand landmarks over time
-- **LSTM Layers**: Capture temporal patterns in sign movements
-- **Dropout**: Prevents overfitting (30% dropout rate)
-- **Dense Layers**: Final classification
-- **Output**: Probability distribution over sign classes
-
-**Training Details:**
-- **Dataset**: 20+ samples per sign class
-- **Sequence Length**: 30 frames
-- **Training Epochs**: 50-100
-- **Optimizer**: Adam (learning rate: 0.001)
-- **Loss Function**: Categorical crossentropy
-- **Accuracy**: 95%+ on validation set
-
-#### 4. **Three Recognition Modules**
-
-##### **A. Alphabet Recognition** (`/sign_recognition/numbers_letters_api.py`)
-
-```python
-# Trained on A-Z fingerspelling
-classes = ['A', 'B', 'C', ..., 'Z']
-model = load_model('models/sign_language_numbers_letters.h5')
-```
-
-- Static hand poses for each letter
-- Real-time classification
-- Visual feedback with predicted letter
-- Confidence score display
-
-##### **B. Number Recognition** (`/sign_recognition/numbers_letters_api.py`)
-
-```python
-# Trained on 0-9 number signs
-classes = ['0', '1', '2', ..., '9']
-```
-
-- Single-hand and two-hand numbers
-- Sequential number recognition
-- Practice mode with target numbers
-
-##### **C. Word/Phrase Recognition** (`/sign_recognition/translate_api.py`)
-
-```python
-# Trained on 350+ common words
-classes = ['HELLO', 'THANK_YOU', 'PLEASE', 'YES', 'NO', ...]
-```
-
-- Dynamic sign sequences
-- Context-aware recognition
-- Phrase composition
-- Real-world vocabulary
-
-#### 5. **Real-Time Pipeline**
-
-```javascript
-// Client-side webcam capture
-navigator.mediaDevices.getUserMedia({ video: true })
-  .then(stream => {
-    // Capture frame
-    const frame = captureFrame(video);
-    
-    // Send to Python backend
-    fetch('/recognize', {
-      method: 'POST',
-      body: JSON.stringify({ frame }),
-      headers: { 'Content-Type': 'application/json' }
-    })
-    .then(response => response.json())
-    .then(data => {
-      // Display recognition result
-      displayResult(data.sign, data.confidence);
-    });
-  });
-```
-
-**Processing Flow:**
-1. **Capture**: Webcam captures video frame
-2. **Send**: Frame sent to FastAPI backend
-3. **Detect**: MediaPipe detects hand landmarks
-4. **Extract**: Features extracted from landmarks
-5. **Predict**: LSTM model predicts sign
-6. **Return**: Result sent back to client
-7. **Display**: Visual feedback shown to user
-
-**Performance:**
-- Latency: < 100ms per frame
-- Throughput: 10-15 FPS
-- Accuracy: 95%+ for trained signs
-- CPU Usage: Moderate (optimized with TensorFlow Lite)
-
-### Data Collection & Training
-
-#### Training Data Structure
-
-```
-sign_recognition/training_data/
-├── a/
-│   ├── seq_0.npy
-│   ├── seq_1.npy
-│   └── ...
-├── b/
-│   ├── seq_0.npy
-│   └── ...
-├── hello/
-├── thank_you/
-└── ...
-```
-
-Each `.npy` file contains:
-- 30 frames of hand landmark data
-- Shape: (30, 63) for single hand
-- Shape: (30, 126) for two hands
-
-#### Data Collection Tool
-
-```bash
-# Collect training data for new signs
-cd sign_recognition
-python collect_gesture_data.py
-
-# Follow prompts to record sequences
-# Press 'Q' to start recording
-# Press 'ESC' to stop
-```
-
-#### Training New Signs
-
-```bash
-# Train model on collected data
-python train_gesture_model.py
-
-# Model saved to models/sign_language_model.h5
-```
-
-### API Endpoints
-
-#### **1. Alphabet/Number Recognition**
-
-```http
-POST http://localhost:8002/recognize
-Content-Type: application/json
-
-{
-  "frame": "base64_encoded_image"
-}
-
-Response:
-{
-  "sign": "A",
-  "confidence": 0.98,
-  "landmarks": [...],
-  "timestamp": "2025-01-17T10:30:00Z"
-}
-```
-
-#### **2. Word/Phrase Recognition**
-
-```http
-POST http://localhost:8001/translate
-Content-Type: application/json
-
-{
-  "sequence": [[...], [...], ...],  # 30 frames of landmarks
-  "mode": "word"
-}
-
-Response:
-{
-  "recognized_sign": "HELLO",
-  "confidence": 0.95,
-  "alternatives": [
-    {"sign": "HI", "confidence": 0.87},
-    {"sign": "WELCOME", "confidence": 0.76}
-  ]
-}
-```
-
-### Future Enhancements
-
-1. **Sentence Recognition**: Chain multiple signs together
-2. **Grammar Support**: Add sign language grammar rules
-3. **Facial Expression**: Incorporate facial features for emotion
-4. **Two-Hand Coordination**: Better support for complex two-hand signs
-5. **Regional Variations**: Support for different sign language dialects
-6. **Continuous Recognition**: Real-time streaming without frame-by-frame
-7. **Mobile Optimization**: TensorFlow Lite for mobile deployment
+- **Alphabet** — A to Z (ISL fingerspelling)
+- **Numbers** — 0 to 9
+- **Words** — 350+ common ISL words and phrases
 
 ---
 
-## 🤖 AI Tutor System (SignMentor)
+## 🤖 AI Tutor System – SignMentor
 
-### Overview
+SignMentor is powered by **Amazon Bedrock** and provides:
 
-SignMentor is an AI-powered conversational tutor that helps users learn sign language through natural language interactions, voice commands, and video demonstrations.
-
-### Architecture
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                    SignMentor AI Tutor                       │
-├─────────────────────────────────────────────────────────────┤
-│                                                              │
-│  ┌──────────────┐         ┌──────────────┐                 │
-│  │   Frontend   │         │   Backend    │                 │
-│  │   Chat UI    │◄───────►│  Express.js  │                 │
-│  │              │         │              │                 │
-│  │  - Voice In  │         │  - /api/tutor│                 │
-│  │  - Voice Out │         │  - /api/voice│                 │
-│  │  - Videos    │         │  - /api/report                 │
-│  └──────────────┘         └──────┬───────┘                 │
-│                                  │                          │
-│                                  ▼                          │
-│  ┌─────────────────────────────────────────────────┐      │
-│  │              OpenAI Services                     │      │
-│  ├─────────────────────────────────────────────────┤      │
-│  │                                                   │      │
-│  │  ┌──────────────┐  ┌──────────────┐             │      │
-│  │  │   GPT-4      │  │   Whisper    │             │      │
-│  │  │   Chat       │  │   Speech-to- │             │      │
-│  │  │   Completion │  │   Text       │             │      │
-│  │  └──────────────┘  └──────────────┘             │      │
-│  │                                                   │      │
-│  │  ┌──────────────┐  ┌──────────────┐             │      │
-│  │  │   TTS        │  │   Video      │             │      │
-│  │  │   Text-to-   │  │   Sequence   │             │      │
-│  │  │   Speech     │  │   Player     │             │      │
-│  │  └──────────────┘  └──────────────┘             │      │
-│  │                                                   │      │
-│  └─────────────────────────────────────────────────┘      │
-│                                                              │
-└─────────────────────────────────────────────────────────────┘
-```
-
-### Features
-
-#### 1. **Text Chat**
-```javascript
-// User types: "How do I sign hello?"
-POST /api/tutor/chat
-{
-  "userId": "...",
-  "message": "How do I sign hello?",
-  "conversationHistory": [...]
-}
-```
-
-Response includes:
-- Video demonstration path
-- Step-by-step instructions
-- Memory tricks
-- Related signs
-- Practice exercises
-
-#### 2. **Voice Input (OpenAI Whisper)**
-```javascript
-// User speaks in any supported language
-POST /api/voice/chat
-{
-  "userId": "...",
-  "audio": "base64_encoded_audio",
-  "language": "hi",  // Hindi
-  "voiceEnabled": true
-}
-```
-
-Supported languages:
-- 🇬🇧 English (en)
-- 🇮🇳 Hindi (hi)
-- 🇮🇳 Kannada (kn)
-- 🇮🇳 Telugu (te)
-
-#### 3. **Voice Output (OpenAI TTS)**
-```javascript
-POST /api/voice/text-to-speech
-{
-  "text": "Here's how to sign hello...",
-  "voice": "nova"
-}
-```
-
-#### 4. **Video Sequence Player**
-For sentences/phrases, the tutor plays videos sequentially:
-- Automatic word-by-word progression
-- Visual progress indicators
-- Clickable word navigation
-- Pause/Replay/Slow-motion controls
+- Natural language Q&A about any ISL sign
+- Video demonstrations fetched from the sign database
+- Personalized practice exercises based on quiz performance
+- Voice interaction via Amazon Transcribe (input) + Amazon Polly (output)
+- Multi-language support: English, Hindi, Kannada, Telugu
 
 ---
 
 ## 📄 Parent Report System
 
-### Overview
+After each learning session, LearnSign automatically:
 
-AI-generated comprehensive learning reports for parents to track their child's progress.
+1. Updates the student's profile and stats via Lambda + DynamoDB.
+2. Uses Amazon Bedrock to generate an AI-powered weekly progress report.
+3. Sends the report to the parent dashboard.
+4. Allows parents to download the report as a PDF.
 
-### Report Contents
-
-1. **Student Profile**
-   - Name and age group
-   - Membership duration
-   - Current learning streak
-
-2. **AI Summary**
-   - Personalized learning assessment
-   - Generated using GPT-4
-
-3. **Statistics**
-   - Courses completed
-   - Total learning time
-   - Overall progress percentage
-   - Average quiz scores
-
-4. **Visual Charts**
-   - Weekly activity (bar chart)
-   - Quiz performance trend (line chart)
-   - Course progress bars
-
-5. **Achievements**
-   - Earned badges
-   - Milestones reached
-
-6. **Analysis**
-   - Strengths identification
-   - Areas for growth
-   - Recommended focus areas
-
-7. **Parent Tips**
-   - AI-generated suggestions
-   - Home practice activities
-
-8. **Weekly Goals**
-   - Personalized learning targets
-
-### API Endpoint
-
-```http
-GET /api/report/generate/:userId
-
-Response:
-{
-  "success": true,
-  "report": {
-    "student": { ... },
-    "statistics": { ... },
-    "weeklyActivity": [...],
-    "quizTrend": [...],
-    "courseProgress": [...],
-    "aiInsights": {
-      "overallSummary": "...",
-      "strengthsAnalysis": "...",
-      "areasForGrowth": "...",
-      "achievements": [...],
-      "parentTips": [...],
-      "weeklyGoal": "...",
-      "encouragement": "..."
-    }
-  }
-}
-```
-
-### Export Options
-
-- **PDF Download**: Using html2pdf.js
-- **Print**: Native browser print dialog
+Report contents include: learning summary, strengths, growth areas, quiz trends, and weekly goals.
 
 ---
 
@@ -753,411 +400,120 @@ Response:
 
 ### Prerequisites
 
-Before you begin, ensure you have the following installed:
+- Node.js (v18+)
+- Python 3.12+
+- AWS account with the following services enabled:
+  - API Gateway, Lambda, Cognito, SageMaker, DynamoDB, S3, Bedrock, Transcribe, Polly, CloudWatch
+- Webcam (for sign recognition features)
 
-- **Node.js** (v18 or higher)
-- **npm** (v9 or higher)
-- **MongoDB** (v5.0 or higher)
-- **Python** (v3.12 or higher)
-- **pip** (Python package manager)
-- **Git**
-
-### Quick Start
+### Installation
 
 ```bash
-# 1. Clone the repository
+# Clone the repository
 git clone https://github.com/amithkm9/LearnSign_pro.git
 cd LearnSign_pro
 
-# 2. Install Node.js dependencies
+# Install Node.js dependencies
 npm install
 
-# 3. Install Python dependencies
+# Set up Python ML environment
 cd sign_recognition
-python -m venv env
-source env/bin/activate  # On Windows: env\Scripts\activate
 pip install -r requirements.txt
 cd ..
-
-# 4. Set up environment variables
-cp .env.example .env
-# Edit .env with your configuration
-
-# 5. Start MongoDB
-mongod --dbpath ./data/db
-
-# 6. Seed the database
-npm run seed
-
-# 7. Start the application
-npm run dev:full
 ```
 
-The application will be available at:
-- **Frontend**: http://localhost:3000
-- **Backend API**: http://localhost:4000
-- **Python ML API**: http://localhost:8000-8002
-
----
-
-## 📦 Installation
-
-### Detailed Installation Steps
-
-#### 1. **Clone the Repository**
+### Configuration
 
 ```bash
-git clone https://github.com/amithkm9/LearnSign_pro.git
-cd LearnSign_pro
-```
-
-#### 2. **Install Node.js Dependencies**
-
-```bash
-npm install
-```
-
-This installs:
-- express
-- mongoose
-- ejs
-- bcryptjs
-- express-session
-- body-parser
-- cors
-- axios
-- dotenv
-- uuid
-
-#### 3. **Set Up Python Environment**
-
-```bash
-cd sign_recognition
-
-# Create virtual environment
-python -m venv env
-
-# Activate virtual environment
-# On macOS/Linux:
-source env/bin/activate
-
-# On Windows:
-env\Scripts\activate
-
-# Install Python packages
-pip install -r requirements.txt
-```
-
-Python packages installed:
-- tensorflow
-- keras
-- opencv-python
-- mediapipe
-- numpy
-- fastapi
-- uvicorn
-- python-multipart
-
-#### 4. **Configure MongoDB**
-
-**Option A: Local MongoDB**
-
-```bash
-# Install MongoDB Community Edition
-# macOS:
-brew tap mongodb/brew
-brew install mongodb-community
-
-# Ubuntu:
-sudo apt-get install mongodb
-
-# Start MongoDB
-mongod --dbpath ./data/db
-```
-
-**Option B: MongoDB Atlas (Cloud)**
-
-1. Create account at https://www.mongodb.com/cloud/atlas
-2. Create free cluster
-3. Get connection string
-4. Update `.env` file:
-
-```env
-MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/learnsign
-```
-
-#### 5. **Environment Configuration**
-
-```bash
+# Copy the environment template
 cp .env.example .env
 ```
 
-Edit `.env`:
+Edit `.env` and fill in your AWS credentials and configuration:
 
 ```env
-# Database
-MONGODB_URI=mongodb://127.0.0.1:27017/learnsign
-DB_NAME=learnsign
+# AWS Configuration
+AWS_REGION=ap-south-1
+AWS_ACCESS_KEY_ID=your_access_key
+AWS_SECRET_ACCESS_KEY=your_secret_key
 
-# Server
+# Amazon Cognito
+COGNITO_USER_POOL_ID=your_user_pool_id
+COGNITO_CLIENT_ID=your_client_id
+
+# Amazon DynamoDB
+DYNAMODB_TABLE_USERS=learnsign-users
+DYNAMODB_TABLE_PROGRESS=learnsign-progress
+
+# Amazon S3
+S3_BUCKET_NAME=learnsign-media
+
+# Amazon SageMaker
+SAGEMAKER_ENDPOINT_NAME=learnsign-sign-recognition
+
+# Amazon Bedrock
+BEDROCK_MODEL_ID=anthropic.claude-v2
+
+# App Config
 PORT=3000
-NODE_ENV=development
-
-# Session
-SESSION_SECRET=your_random_secret_key_here
-
-# API URLs
-API_URL=http://localhost:4000
-PYTHON_API_URL=http://localhost:8000
-TRANSLATE_API_URL=http://localhost:8001
-NUMBERS_LETTERS_API_URL=http://localhost:8002
+SESSION_SECRET=your_session_secret
 ```
 
-#### 6. **Seed Database**
+### Usage
 
 ```bash
-npm run seed
-```
-
-This creates:
-- Sample users
-- Course catalog
-- Video lessons
-- Quiz questions
-- Learning packages
-
----
-
-## ⚙️ Configuration
-
-### Environment Variables
-
-| Variable | Description | Default |
-|----------|-------------|---------|
-| `MONGODB_URI` | MongoDB connection string | `mongodb://127.0.0.1:27017/learnsign` |
-| `DB_NAME` | Database name | `learnsign` |
-| `PORT` | Main app port | `3000` |
-| `API_PORT` | API server port | `4000` |
-| `NODE_ENV` | Environment mode | `development` |
-| `SESSION_SECRET` | Session encryption key | Required |
-| `PYTHON_API_URL` | ML API base URL | `http://localhost:8000` |
-| `OPENAI_API_KEY` | OpenAI API key for AI Tutor | Required for AI features |
-
-### Database Schema
-
-#### Users Collection
-
-```javascript
-{
-  _id: ObjectId,
-  name: String,
-  email: String,
-  password: String (hashed),
-  age: Number,
-  createdAt: Date,
-  lastLogin: Date
-}
-```
-
-#### Courses Collection
-
-```javascript
-{
-  _id: ObjectId,
-  title: String,
-  description: String,
-  category: String,
-  ageGroup: String,
-  difficulty: String,
-  videos: [
-    {
-      title: String,
-      url: String,
-      duration: Number,
-      order: Number
-    }
-  ],
-  totalLessons: Number,
-  estimatedTime: Number
-}
-```
-
-#### UserProgress Collection
-
-```javascript
-{
-  _id: ObjectId,
-  userId: ObjectId,
-  courseId: ObjectId,
-  completedLessons: [Number],
-  quizScores: [
-    {
-      quizId: ObjectId,
-      score: Number,
-      completedAt: Date
-    }
-  ],
-  progressPercentage: Number,
-  lastAccessedAt: Date,
-  totalTimeSpent: Number
-}
-```
-
----
-
-## 💻 Usage
-
-### Running the Application
-
-#### Development Mode
-
-```bash
-# Run full stack (frontend + backend + Python services)
-npm run dev:full
-
-# Or run individually:
-# Terminal 1: Main app
-npm run dev
-
-# Terminal 2: API server
-npm run api:dev
-
-# Terminal 3: Python ML services
-cd sign_recognition
-source env/bin/activate
-uvicorn main:app --reload --port 8000
-```
-
-#### Production Mode
-
-```bash
-# Start all services
+# Start the Node.js application server
 npm start
 
-# Or use PM2 for process management
-pm2 start ecosystem.config.js
+# In a separate terminal, start the Python ML API
+cd sign_recognition
+python main.py
 ```
 
-### User Workflows
-
-#### 1. **New User Registration**
-
-1. Navigate to `/login`
-2. Click "Sign Up"
-3. Fill registration form
-4. Automatically logged in
-5. Redirected to dashboard
-
-#### 2. **Browse & Enroll in Courses**
-
-1. Go to `/courses`
-2. Select age-appropriate course
-3. Click "Start Learning"
-4. Access video lessons
-5. Complete quizzes
-
-#### 3. **Use Sign Translator**
-
-1. Navigate to `/translate`
-2. Type a word (e.g., "hello")
-3. Click "Show Sign Language"
-4. Watch video demonstration
-5. Loop video for practice
-
-#### 4. **Practice with AI Recognition**
-
-1. Go to `/translator` page
-2. Enable webcam
-3. Perform sign in front of camera
-4. Receive instant feedback
-5. See accuracy score
-
-#### 5. **Track Progress**
-
-1. Visit `/dashboard`
-2. View overall progress
-3. Check weekly activity
-4. See achievements
-5. Identify areas for improvement
-
-#### 6. **Chat with AI Tutor** *(NEW)*
-
-1. Navigate to `/tutor`
-2. Type any word or phrase
-3. Watch video demonstrations
-4. Use 🎤 for voice input
-5. Enable 🔊 for voice responses
-6. Select your preferred language
-
-#### 7. **View Parent Report** *(NEW)*
-
-1. Go to `/dashboard`
-2. Click "View Parent Report"
-3. Review AI-generated insights
-4. Check progress charts
-5. Download as PDF or print
+Open `http://localhost:3000` in your browser. Make sure your webcam is enabled for sign recognition features.
 
 ---
 
-## 📚 API Documentation
+## 📡 API Documentation
 
-### REST API Endpoints
+### Node.js Endpoints
 
 #### Authentication
-
 ```http
 POST /api/auth/register
 POST /api/auth/login
 POST /api/auth/logout
-GET  /api/auth/session
+GET  /api/auth/profile
 ```
 
-#### Courses
-
+#### Courses & Progress
 ```http
-GET    /api/courses
-GET    /api/courses/:id
-GET    /api/courses/category/:category
-GET    /api/courses/age/:ageGroup
-POST   /api/courses
-PUT    /api/courses/:id
-DELETE /api/courses/:id
-```
-
-#### User Progress
-
-```http
-GET  /api/progress/:userId
-GET  /api/progress/:userId/:courseId
+GET  /api/courses
+GET  /api/courses/:id
 POST /api/progress/update
-POST /api/progress/lesson-complete
-GET  /api/progress/stats/:userId
+GET  /api/progress/:userId
 ```
 
 #### Quizzes
-
 ```http
 GET  /api/quizzes/:courseId
 POST /api/quizzes/submit
 GET  /api/quizzes/results/:userId
 ```
 
-#### AI Tutor
-
+#### AI Tutor (SignMentor)
 ```http
 POST /api/tutor/chat
 GET  /api/tutor/profile/:userId
 ```
 
 #### Voice Services
-
 ```http
 POST /api/voice/chat
 POST /api/voice/text-to-speech
 ```
 
 #### Parent Reports
-
 ```http
 GET /api/report/generate/:userId
 ```
@@ -1165,7 +521,6 @@ GET /api/report/generate/:userId
 ### Python ML API Endpoints
 
 #### Sign Recognition
-
 ```http
 POST /recognize
 POST /translate
@@ -1182,9 +537,9 @@ GET  /model-info
 LearnSign/
 ├── config/
 │   ├── config.js              # Application configuration
-│   └── database.js            # MongoDB connection
+│   └── aws.js                 # AWS SDK configuration
 ├── models/
-│   ├── User.js                # User schema
+│   ├── User.js                # User schema (DynamoDB)
 │   ├── Course.js              # Course schema
 │   ├── UserProgress.js        # Progress tracking schema
 │   ├── QuizAttempt.js         # Quiz results schema
@@ -1196,7 +551,7 @@ LearnSign/
 │   │   └── footer.ejs
 │   ├── home.ejs               # Landing page
 │   ├── courses.ejs            # Course catalog
-│   ├── dashboard.ejs          # User dashboard
+│   ├── dashboard.ejs          # Gamified user dashboard
 │   ├── translate.ejs          # Sign translator
 │   ├── tutor.ejs              # AI Tutor (SignMentor)
 │   ├── report.ejs             # Parent Report
@@ -1208,32 +563,29 @@ LearnSign/
 │   │   ├── dashboard.css
 │   │   ├── courses.css
 │   │   ├── translate.css
-│   │   ├── tutor.css           # AI Tutor styles
-│   │   └── report.css          # Parent Report styles
+│   │   ├── tutor.css
+│   │   └── report.css
 │   ├── js/
 │   │   ├── auth.js
 │   │   ├── translate.js
 │   │   ├── quiz.js
 │   │   ├── heartbeat.js
-│   │   ├── tutor.js            # AI Tutor logic
-│   │   └── report.js           # Parent Report logic
+│   │   ├── tutor.js
+│   │   └── report.js
 │   └── assets/
-│       ├── imgs/              # Images and logo
+│       ├── imgs/
 │       └── videos/
-│           ├── signs/         # 350+ sign videos
+│           ├── signs/         # 350+ ISL sign videos
 │           └── courses/       # Course videos
 ├── sign_recognition/
 │   ├── models/
 │   │   └── sign_language_numbers_letters.h5
 │   ├── training_data/
-│   │   ├── a/
-│   │   ├── b/
-│   │   └── .../
 │   ├── main.py                # Primary ML API
 │   ├── translate_api.py       # Translation service
-│   ├── numbers_letters_api.py # Alphabet/numbers
-│   ├── train.py               # Training script
-│   ├── collect_data.py        # Data collection
+│   ├── numbers_letters_api.py # Alphabet/numbers recognition
+│   ├── train.py               # Model training script
+│   ├── collect_data.py        # Data collection utility
 │   └── requirements.txt       # Python dependencies
 ├── seeds/
 │   └── seedData.js            # Database seeding
@@ -1241,182 +593,138 @@ LearnSign/
 ├── api.js                     # API server
 ├── package.json               # Node dependencies
 ├── .env.example               # Environment template
-├── .gitignore                 # Git ignore rules
-├── DEPLOYMENT.md              # Deployment guide
-└── README.md                  # This file
+├── .gitignore
+├── DEPLOYMENT.md
+└── README.md
 ```
-
----
-
-## 🤝 Contributing
-
-We welcome contributions from the community! Here's how you can help:
-
-### How to Contribute
-
-1. **Fork the repository**
-
-```bash
-git clone https://github.com/YOUR_USERNAME/LearnSign_pro.git
-```
-
-2. **Create a feature branch**
-
-```bash
-git checkout -b feature/amazing-feature
-```
-
-3. **Make your changes**
-
-4. **Commit with clear messages**
-
-```bash
-git commit -m "Add: New sign recognition feature"
-```
-
-5. **Push to your fork**
-
-```bash
-git push origin feature/amazing-feature
-```
-
-6. **Open a Pull Request**
-
-### Contribution Guidelines
-
-- Follow existing code style
-- Write meaningful commit messages
-- Add tests for new features
-- Update documentation
-- Be respectful and collaborative
-
-### Areas for Contribution
-
-- 🎨 UI/UX improvements
-- 🤖 ML model enhancements
-- 🌍 Internationalization
-- 📝 Documentation
-- 🐛 Bug fixes
-- ✨ New features
-- 🧪 Testing
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-```
-MIT License
-
-Copyright (c) 2025 LearnSign Team
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction...
-```
-
----
-
-## 👥 Team
-
-### Core Contributors
-
-- **Amith KM** - Lead Developer & ML Engineer
-- **Adarsh** - Backend Developer
-- **Prajwal** - Frontend Developer
-- **Bindu** - UI/UX Designer
-- **Chandana** - Content Creator
-
----
-
-## 📞 Contact
-
-- **Email**: learnsign.support@gmail.com
-- **Phone**: +91 7022955705
-- **Website**: [Coming Soon]
-- **GitHub**: [@amithkm9](https://github.com/amithkm9)
-- **Issues**: [Report Issues](https://github.com/amithkm9/LearnSign_pro/issues)
-
----
-
-## 🙏 Acknowledgments
-
-- **OpenAI** - GPT-4, Whisper, and TTS APIs for AI tutor
-- **MediaPipe Team** - Hand tracking technology
-- **TensorFlow Team** - Deep learning framework
-- **MongoDB** - Database platform
-- **Express.js Community** - Web framework
-- **All contributors** - For making this possible
-- **Deaf community** - For inspiration and feedback
 
 ---
 
 ## 🗺 Roadmap
 
-### Phase 1: Core Platform (✅ Completed)
-- [x] User authentication system
-- [x] Course catalog
+### Phase 1: Core Platform ✅ Completed
+- [x] User authentication (Amazon Cognito)
+- [x] Course catalog with age-grouped learning paths
 - [x] Video lessons
-- [x] Progress tracking
+- [x] Progress tracking (DynamoDB)
 - [x] Basic sign translator
 
-### Phase 2: AI Integration (✅ Completed)
+### Phase 2: AI Integration ✅ Completed
 - [x] Hand tracking with MediaPipe
-- [x] LSTM model training
-- [x] Real-time recognition
-- [x] Alphabet recognition
-- [x] Number recognition
-- [x] Word recognition
+- [x] LSTM model training and deployment (SageMaker)
+- [x] Real-time ISL recognition (Alphabet, Numbers, Words)
+- [x] Webcam-based quiz assessments
 
-### Phase 3: Enhanced Features (✅ Completed)
-- [x] AI Tutor (SignMentor) with GPT-4
-- [x] Voice input with OpenAI Whisper
-- [x] Voice output with OpenAI TTS
+### Phase 3: Enhanced Features ✅ Completed
+- [x] AI Tutor – SignMentor (Amazon Bedrock)
+- [x] Voice input (Amazon Transcribe)
+- [x] Voice output (Amazon Polly)
 - [x] Multi-language support (English, Hindi, Kannada, Telugu)
-- [x] Parent Report Dashboard with PDF export
-- [x] AI-generated learning insights
+- [x] Parent Report Dashboard with AI-generated PDF export
+- [x] Gamified dashboard and analytics
+
+### Phase 4: Scaling 📋 Planned
 - [ ] Mobile responsive design
 - [ ] Teacher portal
-
-### Phase 4: Scaling (📋 Planned)
-- [ ] Multi-language support
-- [ ] Mobile apps (iOS/Android)
+- [ ] Mobile apps (iOS / Android)
 - [ ] Offline mode
-- [ ] Advanced analytics
-- [ ] API for third-party integration
+- [ ] Advanced analytics and reporting
 
-### Phase 5: Innovation (🔮 Future)
-- [ ] AR/VR integration
-- [ ] Voice-to-sign translation
-- [ ] Sign-to-voice translation
-- [x] AI chatbot tutor *(Completed - SignMentor)*
-- [ ] Community features
+### Phase 5: Innovation 🔮 Future
+- [ ] AR/VR integration for immersive learning
+- [ ] Voice-to-sign and Sign-to-voice translation
+- [ ] Community features and peer learning
+- [ ] Third-party API integrations
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions from the community!
+
+1. **Fork the repository**
+```bash
+git clone https://github.com/YOUR_USERNAME/LearnSign_pro.git
+```
+
+2. **Create a feature branch**
+```bash
+git checkout -b feature/amazing-feature
+```
+
+3. **Commit with clear messages**
+```bash
+git commit -m "Add: New sign recognition feature"
+```
+
+4. **Push and open a Pull Request**
+```bash
+git push origin feature/amazing-feature
+```
+
+**Areas for Contribution:** UI/UX improvements, ML model enhancements, new ISL signs, internationalization, documentation, bug fixes, testing.
 
 ---
 
 ## 📊 Project Stats
 
-- **Lines of Code**: ~35,000+
-- **Sign Language Videos**: 354+
-- **Courses**: 50+ lessons
-- **Age Groups Supported**: 3 (1-4, 5-10, 15+)
-- **ML Model Accuracy**: 95%+
-- **API Endpoints**: 30+
-- **Database Collections**: 7
-- **Voice Languages**: 4 (English, Hindi, Kannada, Telugu)
-- **AI Services**: OpenAI GPT-4, Whisper, TTS
-- **Contributors**: 5+
+| Metric | Value |
+|---|---|
+| Sign Language Videos | 354+ |
+| ISL Signs Supported | 350+ |
+| Age Groups | 3 (1–5, 6–10, 10–15) |
+| ML Model Accuracy | 95%+ |
+| API Endpoints | 30+ |
+| Voice Languages | 4 (English, Hindi, Kannada, Telugu) |
+| AWS Services Integrated | 10 |
+| Contributors | 5+ |
+
+---
+
+## 👥 Team
+
+| Name | Role |
+|---|---|
+| **Amith K M** | Team Leader, Lead Developer & ML Engineer |
+| **Adarsh** | Backend Developer |
+| **Prajwal** | Frontend Developer |
+| **Bindu** | UI/UX Designer |
+| **Chandana** | Content Creator |
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 📞 Contact
+
+- **Email:** learnsign.support@gmail.com
+- **Phone:** +91 7022955705
+- **GitHub:** [@amithkm9](https://github.com/amithkm9)
+- **Issues:** [Report Issues](https://github.com/amithkm9/LearnSign_pro/issues)
+
+---
+
+## 🙏 Acknowledgments
+
+- **AWS** — Cloud infrastructure powering the entire LearnSign platform
+- **Amazon Bedrock / SageMaker / Polly / Transcribe / Cognito** — Core AI and cloud services
+- **MediaPipe Team** — Hand tracking technology
+- **TensorFlow / Keras Team** — Deep learning framework
+- **Deaf community** — For inspiration, feedback, and purpose
+- **AI for Bharat Hackathon (H2S × AWS × YourStory)** — For the platform and opportunity
 
 ---
 
 <div align="center">
-  
-  **Made with ❤️ for the deaf and hard-of-hearing community**
-  
-  *Breaking barriers, one sign at a time* 🤟
-  
-  [⬆ Back to Top](#learnsign-)
-  
-</div>
 
+**Made with ❤️ for the deaf and hard-of-hearing community**
+
+*Breaking barriers, one sign at a time* 🤟
+
+[⬆ Back to Top](#learnsign-)
+
+</div>
