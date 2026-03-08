@@ -101,6 +101,11 @@ LearnSign's core experience is only possible because of AI:
 
 ---
 
+# 🎥 LearnSign Demo
+
+https://github.com/user-attachments/assets/35933fd6-315e-4785-87b2-b8a1e793f8ec
+
+
 ## ✨ Features
 
 ### 🎓 Comprehensive Course Catalog
